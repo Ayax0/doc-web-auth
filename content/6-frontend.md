@@ -1,31 +1,31 @@
 <ui-title>Frontend</ui-title>
 
-```ts
-export default function (
-  req: Ref<ReqT> | ReqT | (() => ReqT),
-  opts?: UseFetchOptions<_ResT, DataT, PickKeys, DefaultT, ReqT, Method>
-) {
-  const _request = useFetch(req, {
-    ...opts,
-    onResponseError: [
-      async ({ request }) => {
-        if (request === "/api/auth") return;
+<div class="flex gap-20 mt-40">
+  <div>
+    <Icon name="logos:vue" height="190" width="200"></Icon>
+  </div>
+  <div>
+    <ul class="text-4xl list-disc">
+      <b>Vue.js</b>
+      <li>Performance</li>
+      <li>Einfache Lernkurve</li>
+      <li>Große und aktive Community</li>
+      <li>Klare Trennung von Logik und Darstellung</li>
+    </ul>
+  </div>
+</div>
 
-        await $fetch("/api/auth", {
-          method: "PUT",
-          async onResponse({ response }) {
-            if (!response.ok) return;
-            await _request.refresh();
-          },
-          async onResponseError() {
-            await navigateTo("/dmz/login");
-          },
-        });
-      },
-      ...(opts?.onResponseError ? [opts.onResponseError] : []),
-    ],
-  });
-
-  return _request;
-}
-```
+<div class="flex gap-20 my-20">
+  <div>
+    <Icon name="simple-icons:shadcnui" height="190" width="200"></Icon>
+  </div>
+  <div>
+    <ul class="text-4xl list-disc">
+      <b>Shadcn-ui</b>
+      <li>Eigener Code – volle Kontrolle</li>
+      <li>Komposition & konsistente APIs</li>
+      <li>Schöne Standards und flexible Anpassbarkeit</li>
+      <li>Barrierefreiheit (Accessibility) inbegriffen</li>
+    </ul>
+  </div>
+</div>

@@ -27,7 +27,7 @@
       />
       <UiDemoAction
         method="put"
-        url="/dmz/auth"
+        url="/api/auth"
         :mock-status-code="200"
         mock-status-message="OK"
         :mock-output-headers="{

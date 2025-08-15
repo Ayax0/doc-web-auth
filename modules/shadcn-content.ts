@@ -30,7 +30,6 @@ export default defineNuxtModule<ModuleOptions>({
     componentDir: "@/components/ui",
   },
   async setup({ prefix, componentDir }, nuxt) {
-    console.log("register module");
     const COMPONENT_DIR_PATH = componentDir!;
     const ROOT_DIR_PATH = nuxt.options.rootDir;
     const { resolve, resolvePath } = createResolver(ROOT_DIR_PATH);
