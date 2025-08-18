@@ -1,4 +1,4 @@
-<ui-title>Frontend</ui-title>
+# Frontend
 
 <div class="flex gap-20 mt-40">
   <div>

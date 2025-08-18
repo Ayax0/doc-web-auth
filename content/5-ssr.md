@@ -1,3 +1,3 @@
-<ui-title>SSR (Server-Side-Rendering)</ui-title>
+# SSR (Server-Side-Rendering)
 
 <ui-ssr-demo></ui-ssr-demo>

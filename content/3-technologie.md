@@ -1,4 +1,4 @@
-<ui-title id="technologie">Technologie</ui-title>
+# Technologie
 
 <div class="h-[600px] flex gap-4 items-center">
   <icon name="fluent-color:globe-shield-20" height="80"></icon>

@@ -1,4 +1,4 @@
-<ui-title>Frontend</ui-title>
+# Frontend
 
 ```vue
 <script lang="ts" setup>

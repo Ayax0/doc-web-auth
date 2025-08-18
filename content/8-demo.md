@@ -1,4 +1,4 @@
-<ui-title>Demo</ui-title>
+# Demo
 
 <a href="https://web-auth.gastr.io/dmz/login">
   <ui-button class="w-full">
